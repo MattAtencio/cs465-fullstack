@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-const host = process.env.DB_HOST || 'localhost'
-const dbURI = `mongodb://${host}/travlr`;
+//const host = process.env.DB_HOST || 'localhost'
+//const dbURI = `mongodb://${host}/travlr`;
+let dbURI = 'mongodb://localhost/travlr'
 const readLine = require('readline');
 
 mongoose.set('useUnifiedTopology', true);
@@ -11,7 +12,7 @@ const connect = () => {
     useCreateIndex: true
   }), 1000);
 }  
-
+6
 mongoose.connection.on('connected', () => {
   console.log(`Mongoose connected to ${dbURI}`);
 });
@@ -57,5 +58,7 @@ process.on('SIGTERM', () => {
     process.exit(0);
   });
 });
+
+connect();
 
 require('./travlr');
