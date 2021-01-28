@@ -55,11 +55,15 @@ router
     .get(testimonialsController.testimonialsList)
 
 router
-    .route('/latestTestimonial')
-    .get(testimonialsController.latestTestimonial)    
+    .route('/testimonials/:limit')
+    .get(testimonialsController.latestTestimonials)    
 
 router
     .route('/blogPosts')
     .get(blogPostsController.blogPostsList)    
+
+router
+    .route('/vacationTips')
+    .get(blogPostsController.vacationTipsList)
 
 module.exports = router;
