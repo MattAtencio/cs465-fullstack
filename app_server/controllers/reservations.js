@@ -3,47 +3,47 @@ const apiOptions = {
     server: 'http://localhost:3000'
 }
 
-//GET meals list view
-const mealsList = (req, res) => {
-    const path = '/api/meals';
+//GET reservation list view
+const reservationsList = (req, res) => {
+    const path = '/api/reservations';
     const requestOptions = {
         url: `${apiOptions.server}${path}`,
         method: 'GET',
         json: {},
     };
-    console.info('>> mealsController.mealsList calling ' + requestOptions.url);
+    console.info('>> reservationController.reservationsList calling ' + requestOptions.url);
     request(
         requestOptions,
         (err, { statusCode }, body) => {
             if (err) {
                 console.error(err);
             }
-            renderMealsList(req, res, body);
+            renderReservationsList(req, res, body);
         }
     );
 };
 
-//internal method to render the meals list
-const renderMealsList = (req, res, responseBody) => {
+//internal method to render the reservation list
+const renderReservationsList = (req, res, responseBody) => {
     let message = null;
-    let pageTitle = 'Travlr Getaways - Meals';
+    let pageTitle = 'Travlr Getaways - Reservation';
     if (!(responseBody instanceof Array)) {
         message = 'API lookup error';
         repsonseBody = [];
     } else {
         if (!responseBody.length) {
-            message = 'No meals exist in our database!';
+            message = 'No reservations exist in our database!';
         }
     }
-    res.render('meals',
+    res.render('reservations',
         {
                 title: pageTitle,
-                meals: responseBody,
+                reservations: responseBody,
                 message
         }
     );
 }
 
 module.exports = {
-    mealsList
+    reservationsList
 }

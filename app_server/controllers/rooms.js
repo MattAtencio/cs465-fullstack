@@ -1,13 +1,49 @@
-const fs = require('fs');
-const roomType = JSON.parse(fs.readFileSync('./data/roomtype.json', 'utf8'));
+const request = require('request');
+const apiOptions = {
+    server: 'http://localhost:3000'
+}
 
+//GET rooms list view
+const roomsList = (req, res) => {
+    const path = '/api/rooms';
+    const requestOptions = {
+        url: `${apiOptions.server}${path}`,
+        method: 'GET',
+        json: {},
+    };
+    console.info('>> roomsController.roomsList calling ' + requestOptions.url);
+    request(
+        requestOptions,
+        (err, { statusCode }, body) => {
+            if (err) {
+                console.error(err);
+            }
+            renderRoomsList(req, res, body);
+        }
+    );
+};
 
-const rooms = (req, res) => {
-    //kept getting undefined for description var, so left out for now
-    //pageTitle = process.env.npm_package_description + ' - Rooms';
-    res.render('rooms', {title: "Travlr Getaways - Rooms", roomType});
+//internal method to render the rooms list
+const renderRoomsList = (req, res, responseBody) => {
+    let message = null;
+    let pageTitle = 'Travlr Getaways - Rooms';
+    if (!(responseBody instanceof Array)) {
+        message = 'API lookup error';
+        repsonseBody = [];
+    } else {
+        if (!responseBody.length) {
+            message = 'No rooms exist in our database!';
+        }
+    }
+    res.render('rooms',
+        {
+                title: pageTitle,
+                rooms: responseBody,
+                message
+        }
+    );
 }
 
 module.exports = {
-    rooms
+    roomsList
 }

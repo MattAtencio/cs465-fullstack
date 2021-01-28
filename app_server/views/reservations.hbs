@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Reservations</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			{{> header}}
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>My Reservations</h1>
+							<ul id="reservations">
+								{{#each reservations}}
+								<li>
+									<a href="/reservations"><img src="images/{{this.image}}" alt="Img"></a>
+									<h2><a href="/reservations">{{this.name}}</a></h2>
+									<div>
+										Cost Per Person: {{this.perPerson}} <br>
+										Resort:          {{this.resort}} <br>
+										Start Date:      {{this.start}} <br>
+										Length of Stay:  {{this.length}} <br><br>	
+									</div>								
+								</li>
+								{{/each}}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    		{{> footer}}
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Foods - Travlr Getaways Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			{{> header}}
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>Login</h1>
+							<div class="row">
+                        <div class="col-12 col-md-8">
+                           <form>
+                              <div role="alert" *ngIf="formErrors" class="alert alert-danger">{{ formError }}</div>
+                              <div class="form-group">
+                                 <label for="email">Email Address</label>
+                                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                              </div>
+                              <div class="form-group">
+                                 <label for="password">Password</label>
+                                 <input type="password" class="form-control" id="password" name="password" placeholder="e.g 12+ alphanumerics">
+                              </div>
+                              <button type="submit" role="button" class="btn btnprimary" onclick="alert('Login - Under Construction')">Sign In!</button>
+                           </form>
+                        </div>
+                     </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		    {{> footer}}
+	</div>
+</body>
+</html>

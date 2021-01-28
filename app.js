@@ -19,6 +19,9 @@ const contactRouter = require('./app_server/routes/contact');
 const mealsRouter = require('./app_server/routes/meals');
 const newsRouter = require('./app_server/routes/news');
 const roomsRouter = require('./app_server/routes/rooms');
+const reservationsRouter = require('./app_server/routes/reservations');
+const loginRouter = require('./app_server/routes/login');
+const checkoutRouter = require('./app_server/routes/checkout');
 const apiRouter = require('./app_api/routes/index');
 
 const app = express();
@@ -46,6 +49,7 @@ app.use('/api', (req, res, next) => {
   next();
 });
 
+app.use('/', indexRouter);
 app.use('/index', indexRouter);
 app.use('/users', usersRouter);
 app.use('/travel', travelRouter);
@@ -53,6 +57,9 @@ app.use('/contact', contactRouter);
 app.use('/meals', mealsRouter);
 app.use('/news', newsRouter);
 app.use('/rooms', roomsRouter);
+app.use('/reservations', reservationsRouter);
+app.use('/login', loginRouter);
+app.use('/checkout', checkoutRouter);
 app.use('/api', apiRouter);
 
 //catch unauthorized error and create 401
