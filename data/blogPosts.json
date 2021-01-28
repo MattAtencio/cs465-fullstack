@@ -1,0 +1,102 @@
+{
+    "1":{
+          "name": "EXPERIENCE KAYAKING!",
+          "category": "Vacation Tips",
+          "image": "reef1.jpg",
+          "date": "2021-04-02T00:00:00Z",
+          "author": "Juan De La Cruz",
+          "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+          "featured": "true"
+        },
+    "2":{
+        "name": "2023 Best Beaches Contest Winners",
+        "category": "News",
+        "image": "reef1.jpg",
+        "date": "2021-04-02T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "3":{
+        "name": "Top 10 Diving Spots",
+        "category": "News",
+        "image": "reef1.jpg",
+        "date": "2021-04-02T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "4":{
+        "name": "Fishing ban to be implemented this year",
+        "category": "News",
+        "image": "reef1.jpg",
+        "date": "2021-04-02T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "5":{
+        "name": "Lifeguard saves child from drowning",
+        "category": "News",
+        "image": "reef1.jpg",
+        "date": "2021-04-02T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "6":{
+        "name": "What to bring on the beach?",
+        "category": "Vacation Tips",
+        "image": "reef1.jpg",
+        "date": "2021-03-02T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "7":{
+        "name": "Planning Fun Activities",
+        "category": "Vacation Tips",
+        "image": "reef1.jpg",
+        "date": "2021-02-02T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "8":{
+        "name": "Diving Checklist",
+        "category": "Vacation Tips",
+        "image": "reef1.jpg",
+        "date": "2021-04-01T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "9":{
+        "name": "First Aid",
+        "category": "Vacation Tips",
+        "image": "reef1.jpg",
+        "date": "2021-04-07T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "10":{
+        "name": "How to Build a Sand Castle?",
+        "category": "Vacation Tips",
+        "image": "reef1.jpg",
+        "date": "2021-04-09T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        },
+    "11":{
+        "name": "Tanning Tips",
+        "category": "Vacation Tips",
+        "image": "reef1.jpg",
+        "date": "2021-04-10T00:00:00Z",
+        "author": "Juan De La Cruz",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p> <p> Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet. </p>",
+        "featured": "false"
+        }
+
+ }

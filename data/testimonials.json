@@ -1,0 +1,12 @@
+{
+    "1":{
+          "date": "2021-04-02T00:00:00Z",
+          "customer": "Juan De La Cruz",
+          "comment": "“In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis. Aenean quis elit mauris, nec vestibulum lorem.” </p>"
+        },
+    "2":{
+        "date": "2021-04-01T00:00:00Z",
+        "customer": "Juan De La Cruz",
+        "comment": "<p> “In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis. Aenean quis elit mauris, nec vestibulum lorem.” </p>"
+        }
+}
