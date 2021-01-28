@@ -13,6 +13,7 @@ const roomsController = require('../controllers/rooms');
 const mealsController = require('../controllers/meals');
 const reservationsController = require('../controllers/reservations');
 const testimonialsController = require('../controllers/testimonials');
+const blogPostsController = require('../controllers/blogPosts');
 
 router
     .route('/register')
@@ -56,5 +57,9 @@ router
 router
     .route('/latestTestimonial')
     .get(testimonialsController.latestTestimonial)    
+
+router
+    .route('/blogPosts')
+    .get(blogPostsController.blogPostsList)    
 
 module.exports = router;

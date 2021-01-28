@@ -42,7 +42,7 @@ const reservationsSchema = new mongoose.Schema({
 });
 
 //Define the blogPosts schema
-const blogPostsSchema = new mongoose.Schema({
+const blogpostsSchema = new mongoose.Schema({
     name: {type: String, required: true, index: true},
     date: {type: Date, required: true, index: true},
     category: {type: String, required: true},
@@ -65,5 +65,5 @@ mongoose.model('trips', tripSchema);
 mongoose.model('rooms', roomsSchema);
 mongoose.model('meals', mealsSchema);
 mongoose.model('reservations', reservationsSchema);
-mongoose.model('blogPosts', blogPostsSchema);
+mongoose.model('blogposts', blogpostsSchema);
 mongoose.model('testimonials', testimonialsSchema);
