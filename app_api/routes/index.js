@@ -12,6 +12,7 @@ const tripsController = require('../controllers/trips');
 const roomsController = require('../controllers/rooms');
 const mealsController = require('../controllers/meals');
 const reservationsController = require('../controllers/reservations');
+const testimonialsController = require('../controllers/testimonials');
 
 router
     .route('/register')
@@ -46,6 +47,14 @@ router
 
 router
     .route('/reservations')
-    .get(reservationsController.reservationsFindByUser);    
+    .get(reservationsController.reservationsFindByUser);
+    
+router
+    .router('/testimonials')
+    .get(testimonialsController.testimonialsList)
+
+router
+    .router('/latestTestimonial')
+    .get(testimonialsController.latestTestimonial)    
 
 module.exports = router;
