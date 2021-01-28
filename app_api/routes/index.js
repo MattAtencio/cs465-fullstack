@@ -50,11 +50,11 @@ router
     .get(reservationsController.reservationsFindByUser);
     
 router
-    .router('/testimonials')
+    .route('/testimonials')
     .get(testimonialsController.testimonialsList)
 
 router
-    .router('/latestTestimonial')
+    .route('/latestTestimonial')
     .get(testimonialsController.latestTestimonial)    
 
 module.exports = router;
