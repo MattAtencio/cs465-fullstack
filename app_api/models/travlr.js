@@ -41,7 +41,29 @@ const reservationsSchema = new mongoose.Schema({
     description: {type: String, required: true}
 });
 
+//Define the blogPosts schema
+const blogPostsSchema = new mongoose.Schema({
+    name: {type: String, required: true, index: true},
+    category: {type: String, required: true},
+    image: {type: String, required: true},
+    date: {type: Date, required: true, index: true},
+    author: {type: String, required: true},
+    description: {type: String, required: true},
+    featured: {type: Boolean, required: true}
+});
+
+//Define the testimonials schema
+const testimonialsSchema = new mongoose.Schema({
+    date: {type: Date, required: true, index: true},
+    customer: {type: String, required: true, index: true},
+    comment: {type: String, required: true},
+});
+
+
+
 mongoose.model('trips', tripSchema);
 mongoose.model('rooms', roomsSchema);
 mongoose.model('meals', mealsSchema);
 mongoose.model('reservations', reservationsSchema);
+mongoose.model('blogPosts', blogPostsSchema);
+mongoose.model('testimonials', testimonialsSchema);
