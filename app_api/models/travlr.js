@@ -44,9 +44,9 @@ const reservationsSchema = new mongoose.Schema({
 //Define the blogPosts schema
 const blogPostsSchema = new mongoose.Schema({
     name: {type: String, required: true, index: true},
+    date: {type: Date, required: true, index: true},
     category: {type: String, required: true},
     image: {type: String, required: true},
-    date: {type: Date, required: true, index: true},
     author: {type: String, required: true},
     description: {type: String, required: true},
     featured: {type: Boolean, required: true}
