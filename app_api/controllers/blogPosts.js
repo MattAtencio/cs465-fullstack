@@ -90,7 +90,7 @@ const newsPostsList = async (req, res) => {
         });
 };
 
-// GET: /vacationTips/:limit - get X number of news posts, by most recent
+// GET: /newsPosts/:limit - get X number of news posts, by most recent
 const latestNewsPosts = async (req, res) => {
     BlogPosts
         .find({category: "News"}) 
