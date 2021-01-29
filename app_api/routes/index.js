@@ -66,4 +66,17 @@ router
     .route('/vacationTips')
     .get(blogPostsController.vacationTipsList)
 
+router
+    .route('/vacationTips/:limit')
+    .get(blogPostsController.latestVacationTips)
+
+router
+    .route('/newsPosts')
+    .get(blogPostsController.newsPostsList)
+
+router
+    .route('/newsPosts/:limit')
+    .get(blogPostsController.latestNewsPosts)
+
+
 module.exports = router;
