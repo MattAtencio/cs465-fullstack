@@ -1,0 +1,447 @@
+{
+	"info": {
+		"_postman_id": "52ee7ca5-5b15-4710-b4fb-2ed08330cb51",
+		"name": "Travlr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Meals",
+			"item": [
+				{
+					"name": "GetAllMeals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/meals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"meals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "RegisterUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Matt",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "matthew.atencio@snhu.edu",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "SnHuTest123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "matthew.atencio@snhu.edu",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "SnHuTest123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddMeal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/meals/?name=Seafood Speacial",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"meals",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Seafood Speacial"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddTrip",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "MEGR220119",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Mega Reef",
+									"type": "text"
+								},
+								{
+									"key": "length",
+									"value": "6 nights / 7 days",
+									"type": "text"
+								},
+								{
+									"key": "start",
+									"value": "2022-01-19T08:00:00Z",
+									"type": "text"
+								},
+								{
+									"key": "resort",
+									"value": "Barrier Island Resort, 5 starts",
+									"type": "text"
+								},
+								{
+									"key": "perPerson",
+									"value": "3499.00",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "reef3.jpg",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "<p>The Great Barrier Reef ... Test <p>",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/trips",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateTrip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "GetRooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trips",
+			"item": [
+				{
+					"name": "GetTrip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/trips/GALR210214",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trips",
+								"GALR210214"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllTrips",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/trips",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservations",
+			"item": [
+				{
+					"name": "GetReservations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BlogPosts",
+			"item": [
+				{
+					"name": "GetTestimonials",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/testimonials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"testimonials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBlogPosts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/testimonials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"testimonials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFeaturedBlogPost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/testimonials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"testimonials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLatestTestimonial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/trips/GALR210214",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trips",
+								"GALR210214"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVacationTips",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/vacationTips",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vacationTips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetNewsPosts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/vacationTips",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vacationTips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLatestNewsPosts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/vacationTips",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vacationTips"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
