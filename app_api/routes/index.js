@@ -60,7 +60,11 @@ router
 
 router
     .route('/blogPosts')
-    .get(blogPostsController.blogPostsList)    
+    .get(blogPostsController.blogPostsList)   
+
+router
+    .route('/blogPosts/featured')
+    .get(blogPostsController.featuredBlogPost)
 
 router
     .route('/vacationTips')
@@ -77,6 +81,6 @@ router
 router
     .route('/newsPosts/:limit')
     .get(blogPostsController.latestNewsPosts)
-
+    
 
 module.exports = router;

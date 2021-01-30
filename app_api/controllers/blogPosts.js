@@ -113,11 +113,35 @@ const latestNewsPosts = async (req, res) => {
         });
 };
 
+// GET: /blogPosts/featured - get featured blog posts (most recent if more than 1)
+const featuredBlogPost = async (req, res) => {
+    BlogPosts
+        .find({featured: true}) 
+        .sort({"date": -1})
+        .limit(1)
+        .exec((err, blogPosts) => {
+                if (!blogPosts) {
+                    return res  
+                        .status(404)
+                        .json({ "message": "feature blogPost not found"});
+                } else if (err) {
+                    return res
+                        .status(404)
+                        .json(err);
+                } else {
+                    return res
+                        .status(200)
+                        .json(blogPosts);
+                }
+        });
+};
+
 
 module.exports = {
     blogPostsList,
     vacationTipsList,
     latestVacationTips,
     newsPostsList,
-    latestNewsPosts
+    latestNewsPosts,
+    featuredBlogPost
 };
